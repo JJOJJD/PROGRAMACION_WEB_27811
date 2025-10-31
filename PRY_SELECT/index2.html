@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro de Estudiantes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulario Registro de Estudiantes</h1>
+    </header>
+    <main>
+        <form action="server2.html" method="get">
+
+            <table border="2">
+                
+                <!-- INFORMACION PERSONAL -->
+                <tr>
+                    <th colspan="2" align="center"><h2>INFORMACION PERSONAL</h2></th>
+                </tr>
+                
+                <tr>
+                    <th><label for="CEDULA">CEDULA:</label></th>
+                    <td>
+                        <input type="number" name="CEDULA" id="CEDULA" placeholder="1234567890" maxlength="10" pattern="[0-9]{10}" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th><label for="NOMBRE">NOMBRE:</label></th>
+                    <td><input type="text" name="NOMBRE" id="NOMBRE" required pattern="[a-z]{1,15}"></td>
+                </tr>
+                
+                <tr>
+                    <th><label for="APELLIDO">APELLIDO:</label></th>
+                    <td><input type="text" name="APELLIDO" id="APELLIDO"  pattern="[a-z]{1,15}"></td>
+                </tr>
+                
+                <tr>
+                    <th><label for="FECHA_NACIMIENTO">FECHA DE NACIMIENTO:</label></th>
+                    <td><input type="date" name="FECHA_NACIMIENTO" id="FECHA_NACIMIENTO" min="2005-10-27" max="2010-10-27" required></td>
+                </tr>
+                
+                <tr>
+                    <th><label for="SEXO">SEXO:</label></th>
+                    <td>
+                        <input type="radio" name="SEXO" value="Masculino">Masculino
+                        <input type="radio" name="SEXO" value="Femenino">Femenino
+                        <input type="radio" name="SEXO" value="Otro">Otro
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th><label for="IDBANNER">ID BANNER:</label></th>
+                    <td>
+                        <input type="text" name="IDBANNER" id="IDBANNER" placeholder="ABC12345" maxlength="8" pattern="[A-Z]{3}[0-9]{5}" required>
+                    </td>
+                </tr>
+                <!-- Datos de contacto -->
+
+                <tr>
+                    <th colspan="2" align="center"><h2>DATOS DE CONTACTO</h2></th>
+                </tr>
+                
+                <tr>
+                    <th><label for="CORREO_ELECTRONICO">CORREO ELECTRÓNICO:</label></th>
+                    <td><input type="email" name="CORREO_ELECTRONICO" id="CORREO_ELECTRONICO" required></td>
+                </tr>
+                
+                <tr>
+                    <th><label for="TELEFONO">TELÉFONO:</label></th>
+                    <td><input type="tel" name="TELEFONO" id="TELEFONO" required></td>
+                </tr>
+                
+                <tr>
+                    <th><label for="DIRECCION">DIRECCIÓN:</label></th>
+                    <td><input type="text" name="DIRECCION" id="DIRECCION" required></td>
+                </tr>
+
+                <!-- INFORMACIÓN ACADÉMICA -->
+                <tr>
+                    <th colspan="2" align="center"><h2>INFORMACIÓN ACADÉMICA</h2></th>
+                </tr>
+                
+                <tr>
+                    <th><label for="CARRERA">CARRERA:</label></th>
+                    <td>
+                        <select name="CARRERA" id="CARRERA" required>
+                            <option value="">Seleccione una carrera</option>
+                            <option value="Ingeniería de Sistemas">Ingeniería de Sistemas</option>
+                            <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                            <option value="Medicina">Medicina</option>
+                            <option value="Derecho">Derecho</option>
+                            <option value="Contaduría">Contaduría</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th><label>MATERIAS (Maximo 5):</label></th>
+                    <td>
+                        <input type="checkbox" name="MATERIAS" value="Matemáticas Básicas" id="mat1">
+                        <label for="mat1">Matematicas Básicas</label><br>
+                        <input type="checkbox" name="MATERIAS" value="Programación I" id="mat2">
+                        <label for="mat2">Programacion I</label><br>
+                        <input type="checkbox" name="MATERIAS" value="Base de Datos" id="mat3">
+                        <label for="mat3">Base de Datos</label><br>
+                        <input type="checkbox" name="MATERIAS" value="Estructuras de Datos" id="mat4">
+                        <label for="mat4">Estructuras de Datos</label><br>
+                        <input type="checkbox" name="MATERIAS" value="Sistemas Operativos" id="mat5">
+                        <label for="mat5">Sistemas Operativos</label><br>
+                        <input type="checkbox" name="MATERIAS" value="Redes de Computadores" id="mat6">
+                        <label for="mat6">Redes de Computadores</label><br>
+                        <input type="checkbox" name="MATERIAS" value="Arquitectura de Software" id="mat7">
+                        <label for="mat7">Arquitectura de Software</label><br>
+                        <input type="checkbox" name="MATERIAS" value="Metodología de la Investigación" id="mat8">
+                        <label for="mat8">Metodología de la Investigacion</label><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th><label for="HOJA_VIDA">HOJA DE VIDA (PDF):</label></th>
+                    <td>
+                        <input type="file" name="HOJA_VIDA" id="HOJA_VIDA" accept=".pdf" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="REGISTRAR ESTUDIANTE">
+                        <input type="reset" value="LIMPIAR FORMULARIO">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

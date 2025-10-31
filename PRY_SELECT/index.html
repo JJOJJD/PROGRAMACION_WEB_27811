@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT</title>
+</head>
+
+<body>
+    <header>
+        <h1>SELECT EN FORMULARIOS</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+
+            <!-- select paara form -->
+            <fieldset>
+                <label for="lenguaje de programacion">SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO</label>
+                <select name="lenguaje_programacion" id="lenguaje_programacion">
+                    <option value="c_mas_mas">C++</option>
+                    <option value="java">JAVA</option>
+                    <option value="python">PYTHON</option>
+                    <option value="HTML" disabled>HTML</option>
+                    <input type="date" name="fecha_programacion" id="fecha_programacion">
+                </select>
+            </fieldset>
+
+            <br>
+            <br>
+            <label for="musica_favorito">SELECCIONE SU MUSICA FAVORITA</label>
+            <select name="musica_favorito[]" id="musica_favorito" multiple required size="4" autofocus>
+                <!-- <option value="LABA">SHAKIRA LOBA</option>
+                <option value="ANOCHE">BAD BUNNY</option>
+                <option value="ALL_OF_ME">JOHN LENNON</option>
+                <option value="TRISTE" disabled> JOSE JOSE TRISTE </option> -->
+                <optgroup title="REGUETON" label="REGUETON">
+                    <option value="LABA">SHAKIRA LOBA</option>
+                    <option value="ANOCHE">BAD BUNNY</option>
+                    <option value="ALL_OF_ME">JOHN LENNON</option>
+                    <option value="TRISTE" disabled> JOSE JOSE TRISTE </option>
+                </optgroup>
+                <optgroup title="CHICA" label="CHICA">
+                    <option value="LABA">SHAKIRA LOBA</option>
+                    <option value="ANOCHE">BAD BUNNY</option>
+                    <option value="ALL_OF_ME">JOHN LENNON</option>
+                    <option value="TRISTE" disabled> JOSE JOSE TRISTE </option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+
+            <!-- textarea para form -->
+            <label for="frase_motivadora"><strong>INGRESE SU FRASE MOTIVADORA FAVORITA</strong></label>
+            <textarea name="frase_motivadora" id="frase_motivadora" cols="20" rows="5"
+                required>BUENOS DIAS CHICOS DE PRO WEB</textarea>
+            <br>
+            <!-- hidden -->
+            <input type="hidden" name="cedula_usuario" value="1234567890">
+            <br>
+
+            <button type="submit">ENVIAR AL SERVIDOR</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+
+input[type="text"] {
+    border-radius: 8px;
+    padding: 5px;
+    letter-spacing: 5px;
+    border: 2px solid #4a90e2;
+    width: 300px;
+}
+
+textarea {
+    border-radius: 15px;
+    background-color: #89e8f5;
+    border-color: rgb(69, 40, 235);
+    resize: none;
+    overflow-wrap: break-word;
+}
+
+select {
+    border-radius: 8px;
+    font-variant: small-caps;
+    margin: 5px;
+    background-color: #fff;
+    appearance: none;
+}
+
+input[type="checkbox"] {
+    border-radius: 4px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    outline: 2px solid #28a745;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(231, 8, 8, 0.2) inset;
+    width: 20px;
+    height: 20px;
+    transform: rotate(0deg);
+}

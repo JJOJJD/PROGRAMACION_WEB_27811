@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNO CSS</title>
+    <style>
+
+        input[type="text"] {
+            border-radius: 15px;
+            padding: 5px;
+            caret-color: #df2db2;
+            
+        }
+
+        textarea {
+            border-radius: 15px;
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+
+        select {
+            border-radius: 8px;
+            border: 2px solid #1c72d4;
+            text-transform: uppercase;
+        }
+
+        input[type="checkbox"] {
+            border-radius: 4px;
+            accent-color: #dd521b;
+        }
+
+        input[type="radio"] {
+            border-radius: 50%;
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>TIENDA DE MASCOTAS</h1>
+    <label for="nombre_mascota">NOMBRE DE LA MASCOTA:</label>
+    <input type="text" name="nombre_mascota" id="nombre_mascota">
+    <br>
+    <label for="descripcion">DESCRIPCION DE LA MASCOTA:</label>
+    <textarea name="descripcion" id="descripcion" rows="4" cols="50"></textarea>
+    <br>
+    <label for="tipo">TIPO DE MASCOTA:</label>
+    <select name="tipo" id="tipo">
+        <option value="perro">perro</option>
+        <option value="gato">gato</option>
+        <option value="pez">pez</option>
+    </select>
+    <br>
+
+    <label for="SEXO">SEXO:</label>
+    <input type="radio" name="sexo" id="sexo">
+    <label for="sexo">MASCULINO</label>
+    <input type="radio" name="sexo" id="sexo">
+    <label for="sexo">FEMENINO</label>
+    <br>
+
+    <label for="dias">SELECCIONE DIA DE VACUNACION</label>
+    <br>
+
+    <label for="lunes">Lunes</label>
+    <input type="checkbox" name="dias[]" id="lunes">
+    <label for="martes">Martes</label>
+    <input type="checkbox" name="dias[]" id="martes">
+    <label for="miercoles">Miercoles</label>
+    <input type="checkbox" name="dias[]" id="miercoles">
+    <label for="jueves">Jueves</label>
+    <input type="checkbox" name="dias[]" id="jueves">
+    <label for="viernes">Viernes</label>
+    <input type="checkbox" name="dias[]" id="viernes">
+    <br>
+</body>
+</html>

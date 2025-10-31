@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS EN PAGINA</title>
+    <style>
+        * {
+            /*AFECTA A TODOS LOS ELEMENTOS DE LA PAGINA*/
+            /* color: violet; */
+            
+            h1 {
+                color: rgba(221, 15, 176, 0.884);
+                font-size: 16px;
+                text-align: center;
+            }
+
+            p {
+                color: blueviolet;
+                font-weight: bold;
+                font-size: 12px;
+                
+            }
+
+            .botones_personalizados{
+                color: aqua;
+                border-radius: 10px;
+                background-color: blue;
+                width: 100%;
+
+            }
+
+            #boton_perzonalizado2{
+                color: blue;
+                background-color: rgb(22, 209, 209);
+                border-bottom: 10px;
+                width: 50%;
+                align-items: center;
+
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>HOLA MUNDO</h1>
+    <p>COMO ESTAN</p>
+    <h1>SALUDOS</h1>
+  
+    <hr>
+    <button class="botones_personalizados">Button1</button>
+    <button class="botones_personalizados">Button2</button>
+    <!-- se puede poner clase y un id pero hay atributos de la calse que si se aplican como width, height, etc. -->
+    <button class="botones_personalizados" id="boton_perzonalizado2">Button3</button>
+</body>
+</html>
