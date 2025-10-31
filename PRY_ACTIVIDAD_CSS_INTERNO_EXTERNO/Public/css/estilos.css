@@ -28,7 +28,7 @@ input[type="checkbox"] {
     cursor: pointer;
     width: 18px;
     height: 18px;
-    outline: 2px solid #28a745;
+    outline: 2px solid #d17015;
 }
 
 input[type="radio"] {
